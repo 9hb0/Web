@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>选择器的使用</title>
+</head>
+<style type="text/css">
+    <!--导航栏-->
+    nav {
+        width: 300px;
+    }
+    /*每一项*/
+    li {
+        background-color: rgba(0,0,0,0.4);
+        height: 35px;
+        line-height: 35px;
+        overflow: hidden;
+    }
+    /*伪类选择器设置背景颜色透明度0.9*/
+    li:nth-of-type(2n){
+        background-color: rgba(0,0,0,0.5);
+    }
+    /*鼠标悬停时背景颜色 */
+    li:hover {
+        background: #0099E5;
+    }
+    /*超链接*/
+    a{
+        text-decoration: none;
+        display: block;
+        color: #fff;
+        height: 35px;
+        padding: 0 38px;
+    }
+</style>
+<body>
+<nav>
+    <ul>
+        <li><a href="#">javaEE教程</a></li>
+        <li><a href="#">javaEE教程</a></li>
+        <li><a href="#">javaEE教程</a></li>
+    </ul>
+</nav>
+</body>
+</html>
