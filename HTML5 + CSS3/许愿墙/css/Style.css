@@ -1,0 +1,50 @@
+html{
+    height: 100%;
+}
+/*body颜色渐变 外边框宽度为0*/
+body{
+    background: linear-gradient(to bottom,#CBEBDB 0%,#3794C0 120%);
+    height: 100%;
+    margin: 0%;
+}
+/*类选择器：根据class的值选择元素
+overflow当内容溢出元素框时添加滚动条    hidden:隐藏其余内容*/
+.container {
+    margin: 0 auto;
+    padding: 50px 0;
+    width: 720px;
+    overflow: hidden;
+}
+/*.container p 后代选择器 ： 先匹配第二个选择器的原色，并且属于第一个选择器内
+word-wrap: break-word指定如果足够长得话，应该换行：*/
+.container p{
+    height: 80px;
+    margin: 30px 10px;
+    overflow: hidden;
+    word-wrap: break-word;
+    line-height: 1.5;
+}
+/*text-decoration: none没有文本装饰
+position: relative相对定位方式
+font-size 属性用于设置字体大小。*/
+.container span{
+     text-decoration: none;
+     color: white;
+     position: relative;
+     left: 150px;
+     font-size: 14px;
+ }
+/*box-shadow阴影*/
+/*float元素向左浮动*/
+/*boder-radius圆角边框*/
+.item {
+    width: 200px;
+    height: 200px;
+    line-height: 30px;
+    box-shadow: 0 2px 10px 1px rgba(0,0,0,0.2);
+    float: left;
+    margin: 0 20px;
+    border-bottom-left-radius: 20px 500px;
+    border-bottom-right-radius: 200px 30px;
+    border-top-right-radius: 5px 1000px;
+}
